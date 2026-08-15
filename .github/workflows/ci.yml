@@ -17,4 +17,8 @@ jobs:
     uses: sneat-co/cicd/.github/workflows/nx-ci.yml@main
     with:
       working-directory: frontend
-      targets: "lint test build"
+      targets: "lint build"
+      coverage-command: pnpm exec nx run ext-template-contract:test --coverage
+      coverage-path: coverage
+      minimum-coverage: 100
+      coverage-artifact-name: ext-template-contract-coverage

@@ -14,6 +14,9 @@ export default defineConfig({
     ],
   },
   test: {
+    coverage: {
+      reporter: ['text', 'lcov'],
+    },
     pool: 'forks',
     isolate: true,
     environment: 'jsdom',
