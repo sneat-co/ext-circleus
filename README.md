@@ -1,14 +1,15 @@
-# sneat-ext-contract-template
+# Circleus Contract
 
-Template repository for creating a public `ext-<id>` contract repository.
+Public contract repository for Circleus, the reusable Circles/group-Space
+extension. It owns the wire and contract-facing surfaces consumed by the
+Circleus implementation; this repository is still partly scaffold-derived and
+its `template` paths have not yet all been renamed.
 
-`frontend/` is the sole owner and publisher of
-`@sneat/extension-template-contract`. The paired implementation template is
-[`sneat-ext-template`](../sneat-ext-template); it consumes this package and owns
-the runtime/app code.
-
-For a new extension, create `ext-<id>` from this template, rename `template`,
-publish the contract, and then point the `<id>` implementation at that release.
+`frontend/` is the sole owner and publisher of the Circleus contract package.
+Until the scaffold rename is completed, its generated package name remains
+`@sneat/extension-template-contract`. The paired implementation/app repository
+is [`circleus`](https://github.com/sneat-co/circleus); it consumes this package
+and owns runtime/app code.
 
 ## Layout
 
